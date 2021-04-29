@@ -14,7 +14,7 @@ class Database
     {
         $options = [PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION];
         try {
-            $this->dbHandler = new PDO(DB_DSN,DB_USER,DB_PASS,$options);
+            $this->dbHandler = new PDO($this->dsn,$this->dbUser,$this->dbPass,$options);
         } catch (PDOException $exception) {
             $this->errors = $exception->getMessage();
             echo $this->errors;
