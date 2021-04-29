@@ -1,21 +1,24 @@
 <?php
 declare(strict_types=1);
+require_once '../src/libraries/Controller.php';
 
-
-class Pages
+class Pages extends Controller
 {
     public function __construct()
     {
-
     }
 
     public function index()
     {
-        echo "Home Page";
+        $data = [
+            'title' => 'Home page',
+            'name' => 'Adrian'
+        ];
+        $this->view('pages/index', $data);
     }
 
     public function about()
     {
-        echo "About";
+        $this->view('pages/about');
     }
 }
