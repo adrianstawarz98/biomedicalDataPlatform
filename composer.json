@@ -1,0 +1,22 @@
+{
+  "name": "vendor_name/biomedicaldataplatform",
+  "description": "A simple platform for managing biomedical measurements",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adrian Stawarz",
+      "email": "adrianstawarz98@gmail.com"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.3.5"
+    }
+  },
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {"App\\": "src/"}
+  }
+}
